@@ -1,0 +1,29 @@
+{
+  "name": "bernardopereira.dev",
+  "version": "1.0.0",
+  "description": "Meu site/blog pessoal",
+  "main": "",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoSemiOficial/bernardopereira.dev.git"
+  },
+  "keywords": [
+    "blog",
+    "site",
+    "personal"
+  ],
+  "author": "Bernardo Pereira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoSemiOficial/bernardopereira.dev/issues"
+  },
+  "homepage": "https://github.com/BernardoSemiOficial/bernardopereira.dev#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3"
+  }
+}
