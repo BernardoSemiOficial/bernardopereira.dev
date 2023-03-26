@@ -6,6 +6,10 @@ Nesse site, conta sobre minhas experiências na área de tecnologia (até antes 
 
 Contarei sobre os projetos que já fiz durante o meu desenvolvimento e quais cursos e locais de estudo eu busquei para conseguir desenvolver-me (posso até conta porque tenho duas contas github, por conta de uma infelicidade da vida).
 
+## Blog
+
+Nesse mesmo site, terá uma parte para postagens de Blog de minha autoria. Penso que serão assuntos ligado as tecnologias que já trabalho atualmente e também dicas de carreia em Desenvolvimento Front-End.
+
 ## Tecnologias
 
 Nas linhas abaixo irei descrever melhor todas as informações sobre o projeto e quais tecnologias foram utilizadas para seu desenvolvimento.
@@ -16,15 +20,17 @@ Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem uti
 
 - NextJS
 - TypeScript
-- Biblioteca CSS-in-JS "zero-runtime"
+- Biblioteca CSS-in-JS "zero-runtime"\*
   - [Vanilla-Extract](https://vanilla-extract.style/)
   - [Stitches](https://stitches.dev/)
-- CMS
+- CMS\*
   - [Strapi](https://strapi.io/)
   - [Prismic](https://prismic.io/docs)
 - GraphQL e Apollo
   - [GraphQL](https://graphql.org/)
   - [Apollo](https://www.apollographql.com/)
+
+\*: tecnologias ainda não definida.
 
 ### Ambiente
 
@@ -33,3 +39,7 @@ Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem uti
 - [CommitLintJS](https://commitlint.js.org/#/)
 - [Husky](https://typicode.github.io/husky/#/)
 - [Stylelint](https://stylelint.io/)
+
+### Inspiração de Layout
+
+O meu projeto tem como [layout](src/docs/layout-jagriti-mishra.png) inspirado no trabalho da [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que ela deixou disponível: [link](https://jagriti-blog.netlify.app/#)
