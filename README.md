@@ -50,6 +50,7 @@ aderindo). Entre elas:
 - [CommitLintJS](https://commitlint.js.org/#/)
 - [Husky](https://typicode.github.io/husky/#/)
 - [Stylelint](https://stylelint.io/)
+- [Lint-staged](https://github.com/okonet/lint-staged)
 
 ### Inspiração de Layout
 
@@ -61,4 +62,5 @@ ela deixou disponível: [link](https://jagriti-blog.netlify.app/#)
 
 - [] A ferramenta Stylelint ainda não suporta a análise de código CSS que vem de
   bibliotecas como Vanilla Extract e Stitches. Isso é o que diz a própria
-  documentação do Stylelint na migração para a versão 15, que é a mais atual.
+  documentação do Stylelint na migração para a
+  [versão 15](https://stylelint.io/migration-guide/to-15/), que é a mais atual.
