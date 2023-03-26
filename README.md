@@ -2,19 +2,30 @@
 
 ## Pessoal
 
-Nesse site, conta sobre minhas experiências na área de tecnologia (até antes de eu ter entrado nela), quais cursos já fiz para ingressar na área e como foi meu início quando decidi que realmente iria me dedicar a estudar para conseguir um emprego como Desenvolvedor Front-End.
+Nesse site, conta sobre minhas experiências na área de tecnologia (até antes de
+eu ter entrado nela), quais cursos já fiz para ingressar na área e como foi meu
+início quando decidi que realmente iria me dedicar a estudar para conseguir um
+emprego como Desenvolvedor Front-End.
 
-Contarei sobre os projetos que já fiz durante o meu desenvolvimento e quais cursos e locais de estudo eu busquei para conseguir desenvolver-me (posso até conta porque tenho duas contas github, por conta de uma infelicidade da vida).
+Contarei sobre os projetos que já fiz durante o meu desenvolvimento e quais
+cursos e locais de estudo eu busquei para conseguir desenvolver-me (posso até
+conta porque tenho duas contas github, por conta de uma infelicidade da vida).
 
 ## Blog
 
-Nesse mesmo site, terá uma parte para postagens de Blog de minha autoria. Penso que serão assuntos ligado as tecnologias que já trabalho atualmente e também dicas de carreia em Desenvolvimento Front-End.
+Nesse mesmo site, terá uma parte para postagens de Blog de minha autoria. Penso
+que serão assuntos ligado as tecnologias que já trabalho atualmente e também
+dicas de carreia em Desenvolvimento Front-End.
 
 ## Tecnologias
 
-Nas linhas abaixo irei descrever melhor todas as informações sobre o projeto e quais tecnologias foram utilizadas para seu desenvolvimento.
+Nas linhas abaixo irei descrever melhor todas as informações sobre o projeto e
+quais tecnologias foram utilizadas para seu desenvolvimento.
 
-Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem utilizadas no mercado de Front-End (algumas eu nem tenho tanto conhecimento a respeito, por nunca ter trabalhado, mas tem tudo para o mercado acabar aderindo). Entre elas:
+Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem
+utilizadas no mercado de Front-End (algumas eu nem tenho tanto conhecimento a
+respeito, por nunca ter trabalhado, mas tem tudo para o mercado acabar
+aderindo). Entre elas:
 
 ### Tecnologias Core
 
@@ -42,4 +53,12 @@ Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem uti
 
 ### Inspiração de Layout
 
-O meu projeto tem como [layout](src/docs/layout-jagriti-mishra.png) inspirado no trabalho da [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que ela deixou disponível: [link](https://jagriti-blog.netlify.app/#)
+O meu projeto tem como [layout](src/docs/layout-jagriti-mishra.png) inspirado no
+trabalho da [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que
+ela deixou disponível: [link](https://jagriti-blog.netlify.app/#)
+
+### To-dos
+
+- [] A ferramenta Stylelint ainda não suporta a análise de código CSS que vem de
+  bibliotecas como Vanilla Extract e Stitches. Isso é o que diz a própria
+  documentação do Stylelint na migração para a versão 15, que é a mais atual.
