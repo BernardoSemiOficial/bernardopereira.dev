@@ -1,11 +1,10 @@
 import { ReactElement } from 'react'
 
-import { Default } from '../src/layouts/Default'
-import styles from '../styles/Home.module.css'
+import { Default } from '../layouts/Default'
 import type { NextPageWithLayout } from './_app'
 
 const Home: NextPageWithLayout = () => {
-  return <div className={styles.container}>hello world</div>
+  return <p>hello world</p>
 }
 
 Home.getLayout = function getLayout(page: ReactElement) {

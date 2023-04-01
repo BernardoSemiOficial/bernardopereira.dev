@@ -2,7 +2,7 @@ import { ReactElement, ReactNode } from 'react'
 
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
-import '../styles/globals.css'
+import '../styles/global.css'
 
 // eslint-disable-next-line
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {

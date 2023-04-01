@@ -1,10 +1,11 @@
-import { ReactNode } from "react";
-import { button } from "./style.css";
+import { ReactNode } from 'react'
+
+import * as S from './style.css'
 
 interface ButtonProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const Button = ({ children }: ButtonProps) => {
-  return <button className={button}>{children}</button>;
-};
+  return <button className={S.button.primary}>{children}</button>
+}

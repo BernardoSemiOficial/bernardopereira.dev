@@ -1,0 +1,31 @@
+import { globalStyle } from '@vanilla-extract/css'
+
+import { vars } from './theme.css'
+
+globalStyle('*', {
+  boxSizing: 'border-box',
+})
+
+globalStyle('html, body', {
+  fontFamily: 'Ubuntu, sans-serif',
+  margin: 0,
+  padding: 0,
+})
+
+globalStyle('a', {
+  color: 'inherit',
+  textDecoration: 'none',
+})
+
+globalStyle('button', {
+  cursor: 'pointer',
+  backgroundColor: '#ffffff',
+})
+
+globalStyle('li', {
+  listStyle: 'none',
+})
+
+globalStyle('h1, h2, h3, h4, h5, h6', {
+  margin: vars.spacing.none,
+})

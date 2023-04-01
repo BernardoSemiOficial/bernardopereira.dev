@@ -2,7 +2,6 @@ import { style } from '@vanilla-extract/css'
 
 export const container = style({
   width: '100%',
-  maxWidth: '1050px',
-  margin: '0 auto',
-  backgroundColor: '#e59e00',
+  minHeight: '100vh',
+  // backgroundColor: vars.color.yellow[500],
 })
