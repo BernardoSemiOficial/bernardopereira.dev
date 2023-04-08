@@ -4,8 +4,9 @@ import * as S from './style.css'
 
 interface ButtonProps {
   children: ReactNode
+  variant: keyof typeof S.button
 }
 
-export const Button = ({ children }: ButtonProps) => {
-  return <button className={S.button.primary}>{children}</button>
+export const Button = ({ children, variant }: ButtonProps) => {
+  return <button className={S.button[variant]}>{children}</button>
 }

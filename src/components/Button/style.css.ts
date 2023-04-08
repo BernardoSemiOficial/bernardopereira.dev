@@ -17,13 +17,20 @@ export const button = styleVariants({
   primary: [
     base,
     {
-      backgroundColor: vars.color.yellow[600],
+      backgroundColor: vars.color.black[800],
     },
   ],
   secondary: [
     base,
     {
-      backgroundColor: vars.color.brown[900],
+      backgroundColor: vars.color.amber[700],
+    },
+  ],
+  tertiary: [
+    base,
+    {
+      color: vars.color.black[900],
+      backgroundColor: vars.color.yellow[700],
     },
   ],
 })

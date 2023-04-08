@@ -18,7 +18,7 @@ export const Header = () => {
             </li>
           ))}
         </nav>
-        <Button>Theme color</Button>
+        <Button variant='secondary'>Theme color</Button>
       </div>
     </header>
   )

@@ -2,44 +2,33 @@ import { vars } from '@/styles/theme.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
-  backgroundColor: vars.color.yellow[500],
-  paddingInline: vars.spacing.xsmall,
+  paddingInline: vars.spacing.xxsmall,
 })
 
 export const wrapper = style({
   margin: '0 auto',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'space-between',
   maxWidth: vars.container.max,
-  paddingBlock: vars.spacing.xmedium,
+  paddingBlock: vars.spacing.xxxlarge,
 })
 
-export const navigation = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyItems: 'center',
+export const apresentation = style({
+  textAlign: 'center',
+  font: vars.font.headlineLarge,
+  letterSpacing: vars.font.letterSpacing.medium,
+  color: vars.color.black[900],
+  paddingBlock: vars.spacing.large,
 })
 
-export const navItem = style({
-  marginInline: vars.spacing.xxxsmall,
-  color: vars.color.gray[900],
-  paddingBlock: vars.spacing.xsmall,
-  position: 'relative',
-  selectors: {
-    '&::before': {
-      content: '',
-      position: 'absolute',
-      bottom: '0px',
-      height: '2px',
-      width: '100%',
-      opacity: 0,
-      backgroundColor: vars.color.gray[900],
-      borderRadius: vars.borderRadius.small,
-      transition: vars.transition.ease,
-    },
-    '&:hover::before': {
-      opacity: 1,
-    },
-  },
+export const name = style({
+  color: vars.color.yellow[700],
+})
+
+export const about = style({
+  font: vars.font.bodySmall,
+  letterSpacing: vars.font.letterSpacing.small,
+  color: vars.color.black[900],
 })

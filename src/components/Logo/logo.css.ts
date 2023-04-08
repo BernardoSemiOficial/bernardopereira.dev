@@ -15,4 +15,5 @@ export const name = style({
   font: vars.font.subtitleMedium,
   letterSpacing: vars.font.letterSpacing.small,
   marginLeft: vars.spacing.xsmall,
+  color: vars.color.amber[700],
 })

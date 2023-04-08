@@ -2,7 +2,7 @@ import { vars } from '@/styles/theme.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
-  backgroundColor: vars.color.yellow[500],
+  backgroundColor: vars.color.black[800],
   paddingInline: vars.spacing.xsmall,
 })
 
@@ -23,7 +23,7 @@ export const navigation = style({
 
 export const navItem = style({
   marginInline: vars.spacing.xxxsmall,
-  color: vars.color.gray[900],
+  color: vars.color.yellow[700],
   paddingBlock: vars.spacing.xsmall,
   position: 'relative',
   selectors: {
@@ -34,7 +34,7 @@ export const navItem = style({
       height: '2px',
       width: '100%',
       opacity: 0,
-      backgroundColor: vars.color.gray[900],
+      backgroundColor: vars.color.yellow[700],
       borderRadius: vars.borderRadius.small,
       transition: vars.transition.ease,
     },
