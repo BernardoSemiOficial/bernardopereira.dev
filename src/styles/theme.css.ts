@@ -48,6 +48,9 @@ export const vars = createGlobalTheme(':root', {
       700: '#B5963F',
     },
   },
+  content: {
+    max: '700px',
+  },
   container: {
     max: '1140px',
   },
@@ -65,6 +68,7 @@ export const vars = createGlobalTheme(':root', {
   },
   border: {
     small: '1px solid',
+    medium: '2px solid',
   },
   font: {
     family: fontFamily,

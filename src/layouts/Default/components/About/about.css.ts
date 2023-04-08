@@ -11,25 +11,25 @@ export const wrapper = style({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'space-between',
-  maxWidth: vars.container.max,
+  maxWidth: vars.content.max,
   paddingBlock: vars.spacing.xxxlarge,
 })
 
-export const apresentation = style({
-  textAlign: 'center',
-  font: vars.font.headlineLarge,
+export const paragraph = style({
+  font: vars.font.bodyLarge,
   letterSpacing: vars.font.letterSpacing.medium,
   color: vars.color.black[900],
-  paddingBlock: vars.spacing.large,
+  selectors: {
+    '& ~ &': {
+      marginTop: vars.spacing.medium,
+    },
+  },
 })
 
-export const name = style({
-  color: vars.color.yellow[700],
-})
-
-export const about = style({
-  font: vars.font.bodySmall,
-  letterSpacing: vars.font.letterSpacing.small,
-  color: vars.color.black[900],
-  paddingBottom: vars.spacing.large,
+export const socialNetworks = style({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  paddingBlock: vars.spacing.xxmedium,
+  gap: vars.spacing.xsmall,
 })
