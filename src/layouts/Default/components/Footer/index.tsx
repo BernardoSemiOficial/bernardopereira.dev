@@ -1,6 +1,6 @@
+import { LinkBase } from '@/components/LinkBase'
 import { LinkGeneral } from '@/enums/LinksGeneral'
 import { Site } from '@/enums/Site'
-import Link from 'next/link'
 
 import * as S from './footer.css'
 
@@ -12,11 +12,15 @@ export const Footer = () => {
       <p className={S.info}>
         &copy;{currentYear} {Site.DOMAIN}
       </p>
-      <Link href={LinkGeneral.TERMS_OF_USE}>
-        <a className={S.link} target='_blank' rel='noopener noreferrer'>
-          Termos de Uso
-        </a>
-      </Link>
+      <span className={S.ball}>•</span>
+      <LinkBase
+        variant={{ color: 'black', style: 'underline', hover: true }}
+        rel='noopener noreferrer'
+        newTab={true}
+        href={LinkGeneral.TERMS_OF_USE}
+      >
+        Termos de Uso
+      </LinkBase>
     </footer>
   )
 }

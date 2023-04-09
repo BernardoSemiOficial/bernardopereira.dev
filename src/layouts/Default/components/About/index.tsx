@@ -1,42 +1,17 @@
-import { AiFillGithub } from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
-
 import { LinkBase } from '@/components/LinkBase'
-import { LabelsCompanies, LabelsSocialNetworks } from '@/enums/Labels'
+import { LabelsCompanies } from '@/enums/Labels'
 import { LinkGeneral } from '@/enums/LinksGeneral'
 
 import * as S from './about.css'
-
-const SocialNetworks = () => (
-  <div className={S.socialNetworks}>
-    <LinkBase
-      variant='normal'
-      title={LabelsSocialNetworks.VISIT_MY_GITHUB}
-      href={LinkGeneral.GITHUB_BERNARDO_SEMI_OFICIAL}
-      newTab={true}
-    >
-      <AiFillGithub size={25} />
-    </LinkBase>
-    <LinkBase
-      variant='normal'
-      title={LabelsSocialNetworks.VISIT_MY_LINKEDIN}
-      href={LinkGeneral.LINKEDIN_BERNARDO}
-      newTab={true}
-    >
-      <FaLinkedinIn size={25} />
-    </LinkBase>
-  </div>
-)
 
 export const About = () => {
   return (
     <section className={S.container}>
       <div className={S.wrapper}>
-        <SocialNetworks />
         <p className={S.paragraph}>
           Trabalho atualmente como Desenvolvedor Front End Junior na{' '}
           <LinkBase
-            variant='underline'
+            variant={{ color: 'yellow', style: 'underline' }}
             rel='noopener noreferrer'
             title={LabelsCompanies.VISIT_JSM}
             href={LinkGeneral.JSM_HOME_PAGE}
@@ -65,7 +40,7 @@ export const About = () => {
         <p className={S.paragraph}>
           Sou formado em técnico em Informática para Internet na instituição{' '}
           <LinkBase
-            variant='underline'
+            variant={{ color: 'yellow', style: 'underline' }}
             rel='noopener noreferrer'
             title={LabelsCompanies.VISIT_ETEC_PQ_BELEM}
             href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
@@ -76,7 +51,7 @@ export const About = () => {
           desde dezembro de 2018. Atualmente, realizo uma graduação com bolsa em
           bacharelado de Sistemas de Informação na{' '}
           <LinkBase
-            variant='underline'
+            variant={{ color: 'yellow', style: 'underline' }}
             rel='noopener noreferrer'
             title={LabelsCompanies.VISIT_FIAP}
             href={LinkGeneral.FIAP_HOME_PAGE}
@@ -86,7 +61,6 @@ export const About = () => {
           </LinkBase>{' '}
           (Faculdade de Informática e Administração) e estou no 7º semestre.
         </p>
-        <SocialNetworks />
       </div>
     </section>
   )

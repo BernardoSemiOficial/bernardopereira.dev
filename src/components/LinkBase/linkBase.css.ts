@@ -1,20 +1,42 @@
 import { vars } from '@/styles/theme.css'
-import { style, styleVariants } from '@vanilla-extract/css'
+import { recipe } from '@vanilla-extract/recipes'
 
-export const base = style({
-  color: 'inherit',
-  font: 'inherit',
-})
-
-export const link = styleVariants({
-  normal: [base],
-  underline: [
-    base,
-    {
-      color: vars.color.yellow[700],
-      paddingBottom: vars.spacing.small,
-      borderBottom: vars.border.medium,
-      borderColor: vars.color.yellow[700],
+export const link = recipe({
+  base: {
+    color: 'inherit',
+    font: 'inherit',
+    borderColor: 'inherit',
+  },
+  variants: {
+    style: {
+      default: {},
+      underline: {
+        paddingBottom: vars.spacing.small,
+        borderBottom: vars.border.medium,
+      },
     },
-  ],
+    color: {
+      black: {
+        color: vars.color.black[900],
+        borderColor: vars.color.black[900],
+      },
+      yellow: {
+        color: vars.color.yellow[700],
+        borderColor: vars.color.yellow[700],
+      },
+    },
+    hover: {
+      true: {
+        borderBottom: 0,
+        ':hover': {
+          borderBottom: vars.border.medium,
+        },
+      },
+    },
+  },
+  defaultVariants: {
+    style: 'default',
+    color: 'black',
+    hover: false,
+  },
 })

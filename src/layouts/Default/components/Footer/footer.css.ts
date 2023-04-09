@@ -15,15 +15,9 @@ export const container = style({
 export const info = style({
   opacity: '0.8',
   display: 'inline-block',
-  marginInline: vars.spacing.xxsmall,
 })
 
-export const link = style({
+export const ball = style({
   opacity: '0.8',
-  textDecoration: 'underline',
-  ':before': {
-    content: '•',
-    display: 'inline-block',
-    marginRight: vars.spacing.xxsmall,
-  },
+  marginInline: vars.spacing.xxsmall,
 })

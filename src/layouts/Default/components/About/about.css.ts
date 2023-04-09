@@ -12,7 +12,7 @@ export const wrapper = style({
   alignItems: 'center',
   justifyContent: 'space-between',
   maxWidth: vars.content.max,
-  paddingBlock: vars.spacing.xxxlarge,
+  paddingBlock: vars.spacing.medium,
 })
 
 export const paragraph = style({
@@ -24,12 +24,4 @@ export const paragraph = style({
       marginTop: vars.spacing.medium,
     },
   },
-})
-
-export const socialNetworks = style({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  paddingBlock: vars.spacing.xxmedium,
-  gap: vars.spacing.xsmall,
 })

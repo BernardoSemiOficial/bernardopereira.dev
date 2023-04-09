@@ -1,10 +1,12 @@
 import { LinkHTMLAttributes, ReactNode } from 'react'
 
+import type { RecipeVariants } from '@vanilla-extract/recipes'
+
 import * as S from './linkBase.css'
 
 interface LinkBaseProps extends LinkHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode
-  variant: keyof typeof S.link
+  variant: RecipeVariants<typeof S.link>
   newTab: boolean
 }
 
@@ -16,7 +18,7 @@ export const LinkBase = ({
 }: LinkBaseProps) => {
   const target = newTab ? '_blank' : '_self'
   return (
-    <a {...props} className={S.link[variant]} target={target}>
+    <a {...props} className={S.link({ ...variant })} target={target}>
       {children}
     </a>
   )
