@@ -33,7 +33,6 @@ aderindo). Entre elas:
 - TypeScript
 - Biblioteca CSS-in-JS "zero-runtime"\*
   - [Vanilla-Extract](https://vanilla-extract.style/)
-  - [Stitches](https://stitches.dev/)
 - CMS\*
   - [Strapi](https://strapi.io/)
   - [Prismic](https://prismic.io/docs)
@@ -54,11 +53,12 @@ aderindo). Entre elas:
 
 ### Inspiração de Layout
 
-O meu projeto tem como [layout](src/docs/layout-jagriti-mishra.png) inspirado no
-trabalho da [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que
-ela deixou disponível: [link](https://jagriti-blog.netlify.app/#)
+O meu projeto é inspirado no [layout](src/docs/layout-jagriti-mishra.png) da
+[Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que ela deixou
+disponível: [link](https://jagriti-blog.netlify.app/#) e também no site pessoal
+do Felipe Fialho que ele tem disponível: [link](https://www.felipefialho.com/)
 
-### To-dos
+### Backlog - tech
 
 - [] A ferramenta Stylelint ainda não suporta a análise de código CSS que vem de
   bibliotecas como Vanilla Extract e Stitches. Isso é o que diz a própria
