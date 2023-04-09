@@ -1,18 +1,35 @@
+import {
+  MediaQueries,
+  Screens,
+  keyMediaQueries,
+  keyScreens,
+} from '@/enums/screens'
 import type { ComplexStyleRule } from '@vanilla-extract/css'
 
-interface ResponsiveStyleProps {
-  tablet: ComplexStyleRule
-  desktop: ComplexStyleRule
+interface GreaterThanProps {
+  xs?: ComplexStyleRule
+  sm?: ComplexStyleRule
+  md?: ComplexStyleRule
+  lg?: ComplexStyleRule
+  xl?: ComplexStyleRule
+  xlg?: ComplexStyleRule
+  fhd?: ComplexStyleRule
 }
 
-export const responsiveStyle = ({ tablet, desktop }: ResponsiveStyleProps) => ({
-  '@media': {
-    'screen and (min-width: 768px)': tablet,
-    'screen and (min-width: 1024px)': desktop,
-  },
-})
+export const greaterThan = (screens: GreaterThanProps) => {
+  const screenEntries = Object.entries(screens) as [
+    keyScreens,
+    ComplexStyleRule
+  ][]
+  const mediaQueries = screenEntries.reduce((mdQuery, [key, style]) => {
+    const keyUpper = key.toUpperCase() as keyScreens
+    const rule =
+      `screen and (min-width: ${Screens[keyUpper]})` as keyMediaQueries
+    mdQuery[rule] = style
+    return mdQuery
+  }, {} as MediaQueries)
 
-responsiveStyle({
-  tablet: { flex: 1, content: 'I will be overridden' },
-  desktop: { flexDirection: 'row' },
-})
+  return {
+    '@media': mediaQueries,
+  }
+}

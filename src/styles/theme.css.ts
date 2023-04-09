@@ -1,3 +1,4 @@
+import { Screens } from '@/enums/screens'
 import { createGlobalTheme } from '@vanilla-extract/css'
 
 const fontFamily = 'Ubuntu, sans-serif'
@@ -93,13 +94,13 @@ export const vars = createGlobalTheme(':root', {
     textCaption: `${fontWeight.regular} 0.75rem/1.25rem ${fontFamily}`,
   },
   screens: {
-    xs: '360px',
-    sm: '480px',
-    md: '768px',
-    lg: '976px',
-    xl: '1280px',
-    xlg: '1440px',
-    fhd: '1920px',
+    xs: Screens.XS,
+    sm: Screens.SM,
+    md: Screens.MD,
+    lg: Screens.LG,
+    xl: Screens.XL,
+    xlg: Screens.XLG,
+    fhd: Screens.FHD,
   },
   spacing: {
     none: '0',
