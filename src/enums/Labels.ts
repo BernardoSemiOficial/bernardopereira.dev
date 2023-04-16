@@ -9,3 +9,7 @@ export enum LabelsCompanies {
   VISIT_FIAP = 'acesse o site da FIAP e descubra quem ela é',
   VISIT_ETEC_PQ_BELEM = 'acesse o site da ETEC Parque Belém e descubra quem ela é',
 }
+
+export enum LabelsTitles {
+  LOGO_IMAGE_TITLE = 'Foto de perfil do Bernardo Pereira',
+}
