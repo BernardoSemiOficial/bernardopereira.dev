@@ -1,5 +1,6 @@
 import { ReactElement, ReactNode } from 'react'
 
+import ErrorBoundary from '@/components/ErrorBoundary'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import '../styles/global.css'
@@ -15,7 +16,11 @@ type AppPropsWithLayout = AppProps & {
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? (page => page)
-  return getLayout(<Component {...pageProps} />)
+  return getLayout(
+    <ErrorBoundary>
+      <Component {...pageProps} />
+    </ErrorBoundary>
+  )
 }
 
 export default MyApp
