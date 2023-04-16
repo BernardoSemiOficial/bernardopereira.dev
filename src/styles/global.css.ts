@@ -1,3 +1,4 @@
+import { greaterThan } from '@/styles/responsive.css'
 import { globalStyle } from '@vanilla-extract/css'
 
 import { vars } from './theme.css'
@@ -10,6 +11,12 @@ globalStyle('html, body', {
   fontFamily: 'Ubuntu, sans-serif',
   margin: 0,
   padding: 0,
+  fontSize: '87.5%',
+  ...greaterThan({
+    desktopXL: {
+      fontSize: '100%',
+    },
+  }),
 })
 
 globalStyle('a', {
