@@ -12,4 +12,5 @@ export enum LabelsCompanies {
 
 export enum LabelsTitles {
   LOGO_IMAGE_TITLE = 'Foto de perfil do Bernardo Pereira',
+  UNDER_CONSTRUCTION = 'Essa página está construção',
 }
