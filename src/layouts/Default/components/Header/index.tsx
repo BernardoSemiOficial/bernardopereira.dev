@@ -1,8 +1,8 @@
-import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import { createUUID } from '@/helpers/createUUID'
 import Link from 'next/link'
 
+import { ToggleTheme } from '../ToggleTheme'
 import * as S from './header.css'
 import { navigation } from './navigation'
 
@@ -18,7 +18,7 @@ export const Header = () => {
             </li>
           ))}
         </nav>
-        <Button variant='secondary'>Theme color</Button>
+        <ToggleTheme />
       </div>
     </header>
   )
