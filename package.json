@@ -42,6 +42,7 @@
     "next": "^12.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-gtm-module": "^2.0.11",
     "react-icons": "^4.8.0",
     "uuid": "^9.0.0"
   },
@@ -56,6 +57,7 @@
     "@types/node": "^18.15.10",
     "@types/react": "17.0.43",
     "@types/react-dom": "^18.0.6",
+    "@types/react-gtm-module": "^2.0.1",
     "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@vanilla-extract/next-plugin": "^2.1.1",
