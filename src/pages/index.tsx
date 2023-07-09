@@ -27,7 +27,7 @@ const Home = ({ environment }: HomeProps) => {
 export async function getStaticProps() {
   return {
     props: {
-      environment: process.env.ENVIRONMENT,
+      environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
     },
   }
 }
