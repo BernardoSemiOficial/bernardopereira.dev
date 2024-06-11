@@ -5,7 +5,11 @@
 
 version: 2
 updates:
-  - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm'
+    directory: '/' # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
+      time: '10:00'
+      timezone: 'America/Sao_Paulo'
+    target-branch: main
+    rebase-strategy: 'disabled'
