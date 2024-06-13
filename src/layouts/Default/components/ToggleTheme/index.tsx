@@ -9,6 +9,7 @@ export const ToggleTheme = () => {
   const { colorMode, toggleThemeColor } = useContext(themeColorContext)
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.log(colorMode)
   }, [colorMode])
 
