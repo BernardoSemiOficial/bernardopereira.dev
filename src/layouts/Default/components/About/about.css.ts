@@ -9,7 +9,6 @@ export const wrapper = style({
   margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
   justifyContent: 'space-between',
   maxWidth: vars.content.max,
   paddingBlock: vars.spacing.medium,
