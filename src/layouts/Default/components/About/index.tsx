@@ -9,22 +9,23 @@ export const About = () => {
     <section className={S.container}>
       <div className={S.wrapper}>
         <p className={S.paragraph}>
-          Trabalho atualmente como Desenvolvedor Front End Junior na{' '}
+          Trabalho atualmente como Desenvolvedor Front-end Pleno na{' '}
           <LinkBase
             variant={{ color: 'yellow', style: 'underline' }}
             rel='noopener noreferrer'
-            title={LabelsCompanies.VISIT_JSM}
-            href={LinkGeneral.JSM_HOME_PAGE}
+            title={LabelsCompanies.VISIT_ACCOUNTFY}
+            href={LinkGeneral.ACCOUNTFY_HOME_PAGE}
             newTab={true}
           >
-            Juntos Somos Mais.
+            Accountfy
           </LinkBase>
+          .
         </p>
         <p className={S.paragraph}>
           Atualmente venho trabalhando com as principais bibliotecas e
-          frameworks do mercado de Front-End: ReactJS, NextJS e VueJS. Realizo a
-          criação de testes unitários, utilização de typescript na maioria dos
-          projetos. Já utilizei estilização com css puro, SCSS,
+          frameworks do mercado de Front-End: ReactJS, NextJS, VueJS, Angular e
+          RxJS. Realizo a criação de testes unitários, utilização de typescript
+          na maioria dos projetos. Já utilizei estilização com css puro, SCSS,
           styled-components, vanilha extract.
         </p>
         <p className={S.paragraph}>
@@ -33,23 +34,7 @@ export const About = () => {
           manipulação/interação com Banco de dados (PostgresSQL).
         </p>
         <p className={S.paragraph}>
-          Na maioria dos meus projetos sempre procuro iniciar com o Typescript
-          para garantir qualidade de código e reduzir erros comuns na tratativa
-          dos dados nos projetos.
-        </p>
-        <p className={S.paragraph}>
-          Sou formado em técnico em Informática para Internet na instituição{' '}
-          <LinkBase
-            variant={{ color: 'yellow', style: 'underline' }}
-            rel='noopener noreferrer'
-            title={LabelsCompanies.VISIT_ETEC_PQ_BELEM}
-            href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
-            newTab={true}
-          >
-            ETEC Parque Belém
-          </LinkBase>{' '}
-          desde dezembro de 2018. Atualmente, realizo uma graduação com bolsa em
-          bacharelado de Sistemas de Informação na{' '}
+          Tenho bacharel em Sistemas de Informação na{' '}
           <LinkBase
             variant={{ color: 'yellow', style: 'underline' }}
             rel='noopener noreferrer'
@@ -59,7 +44,30 @@ export const About = () => {
           >
             FIAP
           </LinkBase>{' '}
-          (Faculdade de Informática e Administração) e estou no 7º semestre.
+          (Faculdade de Informática e Administração), onde ganhei uma bolsa de
+          estudo de 100% dos valores pagos. Além disso, formado em técnico em
+          Informática para Internet na instituição{' '}
+          <LinkBase
+            variant={{ color: 'yellow', style: 'underline' }}
+            rel='noopener noreferrer'
+            title={LabelsCompanies.VISIT_ETEC_PQ_BELEM}
+            href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
+            newTab={true}
+          >
+            ETEC Parque Belém
+          </LinkBase>{' '}
+          desde dezembro de 2018.
+        </p>
+        <p className={S.paragraph}>
+          Minha paixão por desenvolvimento web, minha abordagem colaborativa e
+          meu desejo de aprender continuamente me impulsionam a buscar
+          excelência na criação de soluções digitais de alta qualidade.
+        </p>
+        <p className={S.paragraph}>
+          Estou ansioso para continuar minha jornada de crescimento
+          profissional, aprimorando minhas habilidades e contribuindo para
+          projetos inovadores. Vamos conectar e explorar oportunidades de
+          colaboração.
         </p>
       </div>
     </section>

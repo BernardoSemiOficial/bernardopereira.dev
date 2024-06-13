@@ -6,6 +6,7 @@ export enum LabelsSocialNetworks {
 
 export enum LabelsCompanies {
   VISIT_JSM = 'acesse o site da Juntos Somos Mais e descubra quem ela é',
+  VISIT_ACCOUNTFY = 'acesse o site da Accountfy e descubra quem ela é',
   VISIT_FIAP = 'acesse o site da FIAP e descubra quem ela é',
   VISIT_ETEC_PQ_BELEM = 'acesse o site da ETEC Parque Belém e descubra quem ela é',
 }
