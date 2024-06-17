@@ -1,0 +1,8 @@
+{
+  "hero": {
+    "saudation": "Olá, pessoal!",
+    "name": "Sou o",
+    "cargo": "Desenvolvedor Front-End",
+    "descricao": "Este é o meu blog pessoal, que criei para compartilhar sobre minha carreira de desenvolvedor front-end."
+  }
+}

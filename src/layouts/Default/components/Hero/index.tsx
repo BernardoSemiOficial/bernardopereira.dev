@@ -1,11 +1,15 @@
+import { useTranslation } from 'next-i18next'
+
 import * as S from './hero.css'
 
 export const Hero = () => {
+  const { t: translate } = useTranslation('commom')
+
   return (
     <section className={S.container}>
       <div className={S.wrapper}>
         <div className={S.apresentation}>
-          <p>Olá, pessoal!</p>
+          <p>{translate('hero.saudation')}</p>
           <p>
             Sou o <span className={S.name}>Bernardo Pereira</span>
           </p>

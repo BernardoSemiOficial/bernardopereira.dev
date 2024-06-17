@@ -1,13 +1,14 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement } from 'react'
 
 import ErrorBoundary from '@/components/ErrorBoundary'
 import { NextPage } from 'next'
+import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app'
 import '../styles/global.css'
 
 // eslint-disable-next-line
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode
+  getLayout?: (page: ReactElement) => ReactElement
 }
 
 type AppPropsWithLayout = AppProps & {
@@ -23,4 +24,4 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)
