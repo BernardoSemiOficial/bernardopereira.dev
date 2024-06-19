@@ -3,13 +3,13 @@ import { useTranslation } from 'next-i18next'
 import * as S from './hero.css'
 
 export const Hero = () => {
-  const { t: translate } = useTranslation('commom')
+  const { t } = useTranslation('common')
 
   return (
     <section className={S.container}>
       <div className={S.wrapper}>
         <div className={S.apresentation}>
-          <p>{translate('hero.saudation')}</p>
+          <p>{t('saudation')}</p>
           <p>
             Sou o <span className={S.name}>Bernardo Pereira</span>
           </p>
