@@ -1,4 +1,15 @@
 {
+  "language": {
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
+  },
+  "header": {
+    "home": "Início",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "blog": "Blog"
+  },
   "hero": {
     "saudation": "Olá, pessoal!",
     "name": "Sou o",

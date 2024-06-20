@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import { useTranslation } from 'react-i18next'
 
 import { About } from '@/layouts/Default/components/About'
 import { Hero } from '@/layouts/Default/components/Hero'
@@ -16,10 +15,8 @@ interface HomeProps {
 const Home = ({ environment }: HomeProps) => {
   // eslint-disable-next-line no-console
   console.log('process.env.ENVIRONMENT', environment)
-  const { t } = useTranslation('common')
   return (
     <>
-      {t('hero.saudation')}
       <Hero />
       <SocialNetworks />
       <About />

@@ -1,18 +1,18 @@
 export const navigation = [
   {
     href: '/',
-    label: 'Início',
+    label: 'header.home',
   },
   {
     href: '/projetos',
-    label: 'Projetos',
+    label: 'header.projects',
   },
   {
     href: '/contato',
-    label: 'Contato',
+    label: 'header.contact',
   },
   {
     href: '/blog',
-    label: 'Blog',
+    label: 'header.blog',
   },
 ]

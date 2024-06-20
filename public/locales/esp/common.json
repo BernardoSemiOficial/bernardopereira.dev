@@ -1,6 +1,17 @@
 {
+  "language": {
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
+  },
+  "header": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
   "hero": {
-    "saudation": "Olá, pessoal!",
+    "saudation": "¡Hola gente!",
     "name": "Sou o",
     "cargo": "Desenvolvedor Front-End",
     "descricao": "Este é o meu blog pessoal, que criei para compartilhar sobre minha carreira de desenvolvedor front-end."

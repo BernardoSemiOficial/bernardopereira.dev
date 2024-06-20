@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className={S.container}>
       <div className={S.wrapper}>
         <div className={S.apresentation}>
-          <p>{t('saudation')}</p>
+          <p>{t('hero.saudation')}</p>
           <p>
             Sou o <span className={S.name}>Bernardo Pereira</span>
           </p>
