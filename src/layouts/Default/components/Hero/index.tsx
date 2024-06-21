@@ -1,8 +1,10 @@
+import { TransI18n } from '@/library/next-i18next'
 import { useTranslation } from 'next-i18next'
 
 import * as S from './hero.css'
 
 export const Hero = () => {
+  const name = 'Bernardo Pereira'
   const { t } = useTranslation('common')
 
   return (
@@ -11,15 +13,14 @@ export const Hero = () => {
         <div className={S.apresentation}>
           <p>{t('hero.saudation')}</p>
           <p>
-            Sou o <span className={S.name}>Bernardo Pereira</span>
+            <TransI18n i18nKey={'hero.name'}>
+              Sou o <span className={S.name}>{{ name }}</span>
+            </TransI18n>
           </p>
-          <p>Desenvolvedor Front-End</p>
+          <p>{t('hero.position')}</p>
         </div>
         <div className={S.about}>
-          <p>
-            Este é o meu blog pessoal, que criei para compartilhar sobre minha
-            carreira de desenvolvedor front-end.
-          </p>
+          <p>{t('hero.descricao')}</p>
         </div>
       </div>
     </section>

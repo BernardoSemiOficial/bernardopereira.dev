@@ -15,4 +15,4 @@ export const navigation = [
     href: '/blog',
     label: 'header.blog',
   },
-]
+] as const
