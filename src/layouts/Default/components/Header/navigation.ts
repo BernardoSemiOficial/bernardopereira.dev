@@ -4,11 +4,11 @@ export const navigation = [
     label: 'header.home',
   },
   {
-    href: '/projetos',
+    href: '/projects',
     label: 'header.projects',
   },
   {
-    href: '/contato',
+    href: '/contact',
     label: 'header.contact',
   },
   {
