@@ -23,7 +23,7 @@
     "paragraph1": "Trabalho atualmente como Desenvolvedor Front-end Pleno na <1>{{ employeer }}</1>.",
     "paragraph2": "Atualmente venho trabalhando com as principais bibliotecas e frameworks do mercado de Front-End: ReactJS, NextJS, VueJS, Angular e RxJS. Realizo a criação de testes unitários, utilização de typescript na maioria dos projetos. Já utilizei estilização com css puro, SCSS, styled-components, vanilha extract.",
     "paragraph3": "Conheço também do universo do Back-End, começei a trabalhar com NodeJS, criando servidores HTTP, criação de tarefas com cron job e manipulação/interação com Banco de dados (PostgresSQL).",
-    "paragraph4": "Tenho bacharel em Sistemas de Informação na <1>FIAP</1> (Faculdade de Informática e Administração), onde ganhei uma bolsa de estudo de 100% dos valores pagos. Além disso, formado em técnico em Informática para Internet na instituição <2>ETEC Parque Belém</2> desde dezembro de 2018.",
+    "paragraph4": "Tenho bacharel em Sistemas de Informação na <1>{{ school1 }}</1> (Faculdade de Informática e Administração), onde ganhei uma bolsa de estudo de 100% dos valores pagos. Além disso, formado em técnico em Informática para Internet na instituição <3>{{ school2 }}</3> desde dezembro de 2018.",
     "paragraph5": "Minha paixão por desenvolvimento web, minha abordagem colaborativa e meu desejo de aprender continuamente me impulsionam a buscar excelência na criação de soluções digitais de alta qualidade.",
     "paragraph6": "Estou ansioso para continuar minha jornada de crescimento profissional, aprimorando minhas habilidades e contribuindo para projetos inovadores. Vamos conectar e explorar oportunidades de colaboração."
   }

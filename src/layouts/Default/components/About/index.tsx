@@ -17,7 +17,7 @@ export const About = () => {
             i18nKey={'about.paragraph1'}
             values={{ employeer: 'Accountfy' }}
           >
-            Trabalho atualmente como Desenvolvedor Front-end Pleno na{' '}
+            Trabalho atualmente como Desenvolvedor Front-end Pleno na
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
@@ -25,27 +25,15 @@ export const About = () => {
               href={LinkGeneral.ACCOUNTFY_HOME_PAGE}
               newTab={true}
             >
-              Accountfy
-              {/* {{ employeer: 'Accountfy' }} */}
+              {{ employeer: 'Accountfy' }}
             </LinkBase>
           </TransI18n>
-          {/* Trabalho atualmente como Desenvolvedor Front-end Pleno na{' '}
-          <LinkBase
-            variant={{ color: 'yellow', style: 'underline' }}
-            rel='noopener noreferrer'
-            title={LabelsCompanies.VISIT_ACCOUNTFY}
-            href={LinkGeneral.ACCOUNTFY_HOME_PAGE}
-            newTab={true}
-          >
-            Accountfy
-          </LinkBase>
-          . */}
         </p>
         <p className={S.paragraph}>{t('about.paragraph2')}</p>
         <p className={S.paragraph}>{t('about.paragraph3')}</p>
         <p className={S.paragraph}>
           <TransI18n i18nKey={'about.paragraph4'}>
-            Tenho bacharel em Sistemas de Informação na{' '}
+            Tenho bacharel em Sistemas de Informação na
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
@@ -53,12 +41,11 @@ export const About = () => {
               href={LinkGeneral.FIAP_HOME_PAGE}
               newTab={true}
             >
-              {/* {{ school1: 'FIAP' }} */}
-              FIAP
-            </LinkBase>{' '}
+              {{ school1: 'FIAP' }}
+            </LinkBase>
             (Faculdade de Informática e Administração), onde ganhei uma bolsa de
             estudo de 100% dos valores pagos. Além disso, formado em técnico em
-            Informática para Internet na instituição{' '}
+            Informática para Internet na instituição
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
@@ -66,34 +53,10 @@ export const About = () => {
               href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
               newTab={true}
             >
-              {/* {{ school2: 'ETEC Parque Belém' }} */}
-              ETEC Parque Belém
-            </LinkBase>{' '}
+              {{ school2: 'ETEC Parque Belém' }}
+            </LinkBase>
             desde dezembro de 2018.
           </TransI18n>
-          {/* Tenho bacharel em Sistemas de Informação na{' '}
-          <LinkBase
-            variant={{ color: 'yellow', style: 'underline' }}
-            rel='noopener noreferrer'
-            title={LabelsCompanies.VISIT_FIAP}
-            href={LinkGeneral.FIAP_HOME_PAGE}
-            newTab={true}
-          >
-            FIAP
-          </LinkBase>{' '}
-          (Faculdade de Informática e Administração), onde ganhei uma bolsa de
-          estudo de 100% dos valores pagos. Além disso, formado em técnico em
-          Informática para Internet na instituição{' '}
-          <LinkBase
-            variant={{ color: 'yellow', style: 'underline' }}
-            rel='noopener noreferrer'
-            title={LabelsCompanies.VISIT_ETEC_PQ_BELEM}
-            href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
-            newTab={true}
-          >
-            ETEC Parque Belém
-          </LinkBase>{' '}
-          desde dezembro de 2018. */}
         </p>
         <p className={S.paragraph}>{t('about.paragraph5')}</p>
         <p className={S.paragraph}>{t('about.paragraph6')}</p>

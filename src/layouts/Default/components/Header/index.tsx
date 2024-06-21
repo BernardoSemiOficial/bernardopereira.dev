@@ -31,9 +31,13 @@ export const Header = () => {
             </li>
           ))}
         </nav>
-        <div>
+        <div className={S.headerActions}>
           <ToggleTheme />
-          <select onChange={languageChange} defaultValue='pt'>
+          <select
+            className={S.selectLanguage}
+            onChange={languageChange}
+            defaultValue={router.locale}
+          >
             <option value='pt'>{t('language.portuguese')}</option>
             <option value='en'>{t('language.english')}</option>
             <option value='esp'>{t('language.spanish')}</option>
