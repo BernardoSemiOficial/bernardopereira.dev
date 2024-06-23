@@ -1,6 +1,9 @@
 import { ReactElement } from 'react'
 
-export interface ErrorBoundaryProps {
+import type { WithTranslation } from 'next-i18next'
+import { WithRouterProps } from 'next/dist/client/with-router'
+
+export interface ErrorBoundaryProps extends WithTranslation, WithRouterProps {
   children: ReactElement
 }
 

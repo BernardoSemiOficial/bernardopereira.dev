@@ -1,5 +1,11 @@
-import { Component, ErrorInfo } from 'react'
+import { Component, ComponentType, ErrorInfo } from 'react'
+import { FiAlertCircle } from 'react-icons/fi'
 
+import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
+
+import { Button } from '../Button'
+import * as S from './errorBoundary.css'
 import { ErrorBoundaryProps, ErrorBoundaryState } from './types'
 
 class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
@@ -22,17 +28,28 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 
   render() {
+    const { t, router } = this.props
+
+    const handleGoToLastPage = () => {
+      router.replace('/', undefined, { locale: router.locale })
+      this.setState({ hasError: false })
+    }
+
     if (this.state.hasError) {
       return (
-        <div>
-          <h2>Ops, há um erro!</h2>
-          <button
-            type='button'
-            onClick={() => this.setState({ hasError: false })}
-          >
-            Tentar novamente?
-          </button>
-        </div>
+        <section className={S.container}>
+          <FiAlertCircle size={100} className={S.errorIcon} />
+          <p className={S.errorTitle}>{t('errorBoundary.title')}</p>
+          <div className={S.actions}>
+            <Button
+              type='button'
+              variant='primary'
+              onClick={handleGoToLastPage}
+            >
+              {t('errorBoundary.action')}
+            </Button>
+          </div>
+        </section>
       )
     }
 
@@ -40,4 +57,14 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-export default ErrorBoundary
+function withInjectProps(Component: ComponentType<ErrorBoundaryProps>) {
+  function ComponentWithInjectProps(props: Readonly<ErrorBoundaryProps>) {
+    const router = useRouter()
+    const { t } = useTranslation('common')
+    return <Component {...props} router={router} t={t} />
+  }
+
+  return ComponentWithInjectProps
+}
+
+export default withInjectProps(ErrorBoundary)
