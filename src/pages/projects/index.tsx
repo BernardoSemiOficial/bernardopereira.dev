@@ -10,7 +10,12 @@ interface ProjectsProps {
 }
 
 const Projects = () => {
-  return <UnderConstruction />
+  return (
+    <>
+      <UnderConstruction />
+      {new Error('Teste')}
+    </>
+  )
 }
 
 export async function getStaticProps({ locale }: ProjectsProps) {

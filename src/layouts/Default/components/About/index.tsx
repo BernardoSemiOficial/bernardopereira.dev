@@ -1,5 +1,4 @@
 import { LinkBase } from '@/components/LinkBase'
-import { LabelsCompanies } from '@/enums/Labels'
 import { LinkGeneral } from '@/enums/LinksGeneral'
 import { TransI18n } from '@/library/next-i18next'
 import { useTranslation } from 'next-i18next'
@@ -21,7 +20,7 @@ export const About = () => {
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
-              title={LabelsCompanies.VISIT_ACCOUNTFY}
+              title={t('labels.companies.visitAccounfy')}
               href={LinkGeneral.ACCOUNTFY_HOME_PAGE}
               newTab={true}
             >
@@ -37,7 +36,7 @@ export const About = () => {
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
-              title={LabelsCompanies.VISIT_FIAP}
+              title={t('labels.companies.visitFIAP')}
               href={LinkGeneral.FIAP_HOME_PAGE}
               newTab={true}
             >
@@ -49,7 +48,7 @@ export const About = () => {
             <LinkBase
               variant={{ color: 'yellow', style: 'underline' }}
               rel='noopener noreferrer'
-              title={LabelsCompanies.VISIT_ETEC_PQ_BELEM}
+              title={t('labels.companies.visitETEC')}
               href={LinkGeneral.ETEC_PQ_BELEM_HOME_PAGE}
               newTab={true}
             >

@@ -12,9 +12,10 @@ interface HomeProps {
   environment: string
 }
 
-const Home = ({ environment }: HomeProps) => {
+const Home = ({ environment, locale }: HomeProps) => {
   // eslint-disable-next-line no-console
-  console.log('process.env.ENVIRONMENT', environment)
+  console.log('process.env.ENVIRONMENT', environment, locale)
+
   return (
     <>
       <Hero />

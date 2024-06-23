@@ -4,6 +4,37 @@
     "english": "Inglês",
     "spanish": "Espanhol"
   },
+  "errorBoundary": {
+    "title": "Ops, há um erro!",
+    "action": "Voltar para a página anterior"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "action": "Voltar para a página anterior"
+  },
+  "underConstruction": {
+    "title": "Página em construção",
+    "description": "Essa página está sendo desenvolvida,",
+    "description2": "logo mais, você poderá vê-la.",
+    "action": "Voltar para a página anterior"
+  },
+  "labels": {
+    "socialNetwork": {
+      "visitMyGithub": "acesse meu github para ver meus projetos",
+      "visitMyLinkedin": "acesse meu linkedin para me acompanhar nas redes sociais",
+      "visitMyJSM": "acesse o site da Juntos Somos Mais e descubra quem ela é"
+    },
+    "companies": {
+      "visitJSM": "acesse o site da Juntos Somos Mais e descubra quem ela é",
+      "visitAccounfy": "acesse o site da Accountfy e descubra quem ela é",
+      "visitFIAP": "acesse o site da FIAP e descubra quem ela é",
+      "visitETEC": "acesse o site da ETEC Parque Belém e descubra quem ela é"
+    },
+    "common": {
+      "logoImage": "Foto de perfil do Bernardo Pereira",
+      "underConstruction": "Essa página está em construção"
+    }
+  },
   "header": {
     "home": "Início",
     "projects": "Projetos",

@@ -1,4 +1,4 @@
-import { LabelsTitles } from '@/enums/Labels'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import photoBernardo from 'public/assets/photo-bernardo.jpg'
@@ -6,6 +6,7 @@ import photoBernardo from 'public/assets/photo-bernardo.jpg'
 import * as S from './logo.css'
 
 export const Logo = () => {
+  const { t } = useTranslation('common')
   return (
     <Link href='/' passHref>
       <button className={S.linkImage}>
@@ -13,8 +14,8 @@ export const Logo = () => {
           <Image
             priority
             src={photoBernardo}
-            alt={LabelsTitles.LOGO_IMAGE_TITLE}
-            title={LabelsTitles.LOGO_IMAGE_TITLE}
+            alt={t('labels.common.logoImage')}
+            title={t('labels.common.logoImage')}
             objectFit='cover'
             width={52}
             height={52}
