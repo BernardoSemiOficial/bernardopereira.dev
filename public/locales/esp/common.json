@@ -1,0 +1,61 @@
+{
+  "language": {
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
+  },
+  "errorBoundary": {
+    "title": "¡Ups, hay un error!",
+    "action": "Volver a la página anterior"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "action": "Volver a la página anterior"
+  },
+  "underConstruction": {
+    "title": "Página en construcción",
+    "description": "Esta página está siendo desarrollada,",
+    "description2": "pronto podrás verla.",
+    "action": "Volver a la página anterior"
+  },
+  "labels": {
+    "socialNetwork": {
+      "visitMyGithub": "visita mi GitHub para ver mis proyectos",
+      "visitMyLinkedin": "visita mi LinkedIn para seguirme en las redes sociales",
+      "visitMyJSM": "visita el sitio web de Juntos Somos Mais para saber más sobre ella"
+    },
+    "companies": {
+      "visitJSM": "visita el sitio web de Juntos Somos Mais para saber más sobre ella",
+      "visitAccounfy": "visita el sitio web de Accountfy para saber más sobre ella",
+      "visitFIAP": "visita el sitio web de FIAP para saber más sobre ella",
+      "visitETEC": "visita el sitio web de ETEC Parque Belém para saber más sobre ella"
+    },
+    "common": {
+      "logoImage": "Foto de perfil de Bernardo Pereira",
+      "underConstruction": "Esta página está en construcción"
+    }
+  },
+  "header": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "footer": {
+    "terms": "Terminos de Uso"
+  },
+  "hero": {
+    "saudation": "¡Hola gente!",
+    "name": "Soy <1>{{ name }}</1>",
+    "position": "Desenvolvedor Front-End",
+    "descricao": "Este es mi blog personal, que creé para compartir sobre mi carrera como desarrollador front-end."
+  },
+  "about": {
+    "paragraph1": "Actualmente trabajo como desarrollador front-end completo en <1>{{ employeer }}</1>.",
+    "paragraph2": "Actualmente he estado trabajando con las principales librerías y frameworks del mercado Front-End: ReactJS, NextJS, VueJS, Angular y RxJS. Creo pruebas unitarias, uso mecanografiado en la mayoría de los proyectos. Ya he usado estilo con CSS puro, SCSS, componentes con estilo, extracto de vainilla.",
+    "paragraph3": "También conozco el universo Back-End, comencé a trabajar con NodeJS, creando servidores HTTP, creando tareas con trabajos cron y manipulando/interactuando con Bases de Datos (PostgresSQL).",
+    "paragraph4": "Tengo una licenciatura en Sistemas de Información de la <1>{{ school1 }}</1> (Facultad de Informática y Administración), donde obtuve una beca por valor del 100% de los montos pagados. Además, me gradué como técnico informático para Internet en la institución <3>{{ school2 }}</3> desde diciembre de 2018.",
+    "paragraph5": "Mi pasión por el desarrollo web, mi enfoque colaborativo y mi deseo de aprender continuamente me impulsan a luchar por la excelencia en la creación de soluciones digitales de alta calidad.",
+    "paragraph6": "Espero continuar mi viaje de crecimiento profesional, mejorar mis habilidades y contribuir a proyectos innovadores. Conectémonos y exploremos oportunidades de colaboración."
+  }
+}

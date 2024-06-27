@@ -1,11 +1,16 @@
-import { Component, ErrorInfo } from 'react'
+import { Component, ErrorInfo, ReactElement } from 'react'
+import { FiAlertCircle } from 'react-icons/fi'
 
+import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
+
+import { Button } from '../Button'
+import * as S from './errorBoundary.css'
 import { ErrorBoundaryProps, ErrorBoundaryState } from './types'
 
 class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps | Readonly<ErrorBoundaryProps>) {
     super(props)
-    // Define a state variable to track whether is an error or not
     this.state = { hasError: false }
   }
 
@@ -22,17 +27,28 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 
   render() {
+    const { translation, router } = this.props
+
+    const handleGoToLastPage = () => {
+      router.replace('/', undefined, { locale: router.locale })
+      this.setState({ hasError: false })
+    }
+
     if (this.state.hasError) {
       return (
-        <div>
-          <h2>Ops, há um erro!</h2>
-          <button
-            type='button'
-            onClick={() => this.setState({ hasError: false })}
-          >
-            Tentar novamente?
-          </button>
-        </div>
+        <section className={S.container}>
+          <FiAlertCircle size={100} className={S.errorIcon} />
+          <p className={S.errorTitle}>{translation.t('errorBoundary.title')}</p>
+          <div className={S.actions}>
+            <Button
+              type='button'
+              variant='primary'
+              onClick={handleGoToLastPage}
+            >
+              {translation.t('errorBoundary.action')}
+            </Button>
+          </div>
+        </section>
       )
     }
 
@@ -40,4 +56,25 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-export default ErrorBoundary
+function ErrorBoundaryWithInjectProps({
+  children,
+}: Readonly<{
+  children: ReactElement
+}>) {
+  const router = useRouter()
+  const translation = useTranslation('common')
+  return (
+    <ErrorBoundary
+      router={router}
+      translation={{
+        t: translation.t,
+        i18n: translation.i18n,
+        tReady: translation.ready,
+      }}
+    >
+      {children}
+    </ErrorBoundary>
+  )
+}
+
+export default ErrorBoundaryWithInjectProps

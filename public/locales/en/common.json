@@ -1,0 +1,61 @@
+{
+  "language": {
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
+  },
+  "errorBoundary": {
+    "title": "Oops, there's an error!",
+    "action": "Go back to the previous page"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "action": "Go back to the previous page"
+  },
+  "underConstruction": {
+    "title": "Page under construction",
+    "description": "This page is being developed,",
+    "description2": "soon, you will be able to see it.",
+    "action": "Go back to the previous page"
+  },
+  "labels": {
+    "socialNetwork": {
+      "visitMyGithub": "visit my GitHub to see my projects",
+      "visitMyLinkedin": "visit my LinkedIn to follow me on social media",
+      "visitMyJSM": "visit the Juntos Somos Mais website to learn more about it"
+    },
+    "companies": {
+      "visitJSM": "visit the Juntos Somos Mais website to learn more about it",
+      "visitAccounfy": "visit the Accountfy website to learn more about it",
+      "visitFIAP": "visit the FIAP website to learn more about it",
+      "visitETEC": "visit the ETEC Parque Belém website to learn more about it"
+    },
+    "common": {
+      "logoImage": "Profile photo of Bernardo Pereira",
+      "underConstruction": "This page is under construction"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "footer": {
+    "terms": "Terms of Use"
+  },
+  "hero": {
+    "saudation": "Hey guys!",
+    "name": "I'm <1>{{ name }}</1>",
+    "position": "Desenvolvedor Front-End",
+    "descricao": "This is my personal blog, which I created to share about my career as a front-end developer."
+  },
+  "about": {
+    "paragraph1": "I currently work as a Full Front-end Developer at <1>{{ employeer }}</1>.",
+    "paragraph2": "Currently I have been working with the main libraries and frameworks in the Front-End market: ReactJS, NextJS, VueJS, Angular and RxJS. I create unit tests, use typescript in most projects. I've already used styling with pure css, SCSS, styled-components, vanilla extract.",
+    "paragraph3": "I also know the Back-End universe, I started working with NodeJS, creating HTTP servers, creating tasks with cron jobs and manipulating/interacting with Databases (PostgresSQL).",
+    "paragraph4": "I have a bachelor's degree in Information Systems from <1>{{ school1 }}</1> (Faculty of Informatics and Administration), where I won a scholarship worth 100% of the amounts paid. Furthermore, trained as a computer technician for the Internet at the institution <3>{{ school2 }}</3> since December 2018.",
+    "paragraph5": "My passion for web development, my collaborative approach and my desire to continually learn drive me to strive for excellence in creating high-quality digital solutions.",
+    "paragraph6": "I look forward to continuing my journey of professional growth, improving my skills and contributing to innovative projects. Let's connect and explore collaboration opportunities."
+  }
+}

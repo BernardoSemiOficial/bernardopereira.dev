@@ -1,11 +1,13 @@
 import { LinkBase } from '@/components/LinkBase'
 import { LinkGeneral } from '@/enums/LinksGeneral'
 import { Site } from '@/enums/Site'
+import { useTranslation } from 'next-i18next'
 
 import * as S from './footer.css'
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const { t } = useTranslation('common')
 
   return (
     <footer className={S.container}>
@@ -19,7 +21,7 @@ export const Footer = () => {
         newTab={true}
         href={LinkGeneral.TERMS_OF_USE}
       >
-        Termos de Uso
+        {t('footer.terms')}
       </LinkBase>
     </footer>
   )
