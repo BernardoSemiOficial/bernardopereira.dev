@@ -2,7 +2,9 @@ import { ReactElement } from 'react'
 
 import ErrorBoundary from '@/components/ErrorBoundary'
 import { NextPage } from 'next'
+import type { UserConfig } from 'next-i18next'
 import { appWithTranslation } from 'next-i18next'
+import nextI18nextConfig from 'next-i18next.config'
 import type { AppProps } from 'next/app'
 import '../styles/global.css'
 
@@ -15,6 +17,13 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
+const emptyInitialI18NextConfig: UserConfig = {
+  i18n: {
+    defaultLocale: nextI18nextConfig.i18n.defaultLocale,
+    locales: nextI18nextConfig.i18n.locales,
+  },
+}
+
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? (page => page)
   return getLayout(
@@ -24,4 +33,4 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   )
 }
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp, emptyInitialI18NextConfig)

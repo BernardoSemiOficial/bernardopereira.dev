@@ -8,13 +8,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Default } from '../layouts/Default'
 
 interface HomeProps {
-  locale: string
   environment: string
 }
 
-const Home = ({ environment, locale }: HomeProps) => {
+const Home = ({ environment }: HomeProps) => {
   // eslint-disable-next-line no-console
-  console.log('process.env.ENVIRONMENT', environment, locale)
+  console.log('process.env.ENVIRONMENT', environment)
 
   return (
     <>
@@ -26,7 +25,11 @@ const Home = ({ environment, locale }: HomeProps) => {
   )
 }
 
-export async function getStaticProps({ locale }: HomeProps) {
+interface GetStaticProps {
+  locale: string
+}
+
+export async function getStaticProps({ locale }: GetStaticProps) {
   return {
     props: {
       environment: process.env.NEXT_PUBLIC_ENVIRONMENT,

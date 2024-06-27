@@ -4,16 +4,15 @@ import { UnderConstruction } from '@/components/UnderConstruction'
 import { Default } from '@/layouts/Default'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-interface ContactProps {
-  locale: string
-  environment: string
-}
-
 const Contact = () => {
   return <UnderConstruction />
 }
 
-export async function getStaticProps({ locale }: ContactProps) {
+interface GetStaticProps {
+  locale: string
+}
+
+export async function getStaticProps({ locale }: GetStaticProps) {
   return {
     props: {
       environment: process.env.NEXT_PUBLIC_ENVIRONMENT,

@@ -4,16 +4,15 @@ import { UnderConstruction } from '@/components/UnderConstruction'
 import { Default } from '@/layouts/Default'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-interface BlogProps {
-  locale: string
-  environment: string
-}
-
 const Blog = () => {
   return <UnderConstruction />
 }
 
-export async function getStaticProps({ locale }: BlogProps) {
+interface GetStaticProps {
+  locale: string
+}
+
+export async function getStaticProps({ locale }: GetStaticProps) {
   return {
     props: {
       environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
