@@ -1,10 +1,22 @@
-import { ReactElement } from 'react'
+import { ReactElement, useEffect } from 'react'
 
 import { UnderConstruction } from '@/components/UnderConstruction'
 import { Default } from '@/layouts/Default'
+import { octokit } from '@/services/octokit'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Projects = () => {
+  const getUsersAuthenticated = async () => {
+    const {
+      data: { login },
+    } = await octokit.rest.users.getAuthenticated()
+    console.log('Hello, %s', login)
+  }
+
+  useEffect(() => {
+    getUsersAuthenticated()
+  }, [])
+
   return <UnderConstruction />
 }
 
