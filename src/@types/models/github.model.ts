@@ -145,3 +145,10 @@ export interface RespositoryPermissionsGithub {
   triage: boolean
   pull: boolean
 }
+
+export interface OctokitGithub<T> {
+  url: string
+  headers: object
+  status: number
+  data: T
+}
