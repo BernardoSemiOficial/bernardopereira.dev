@@ -21,6 +21,8 @@ export const listLanguages = style({
   marginTop: 0,
   paddingLeft: 0,
   display: 'flex',
+  flexWrap: 'wrap',
+  overflow: 'hidden',
   height: vars.spacing.xxmedium,
   gap: vars.spacing.xsmall,
 })

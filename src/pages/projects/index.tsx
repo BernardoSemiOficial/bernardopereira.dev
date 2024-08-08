@@ -7,7 +7,7 @@ import { RevalidateTime } from '@/enums/RevalidateTime'
 import { createUUID } from '@/helpers/createUUID'
 import { Default } from '@/layouts/Default'
 import {
-  getLanguagesByRepository,
+  getLanguagesByRepositories,
   getRepositoriesByUser,
   getUserAuthenticated,
 } from '@/services/octokit.service'
@@ -19,14 +19,9 @@ interface ProjectsProps {
   environment: string
   bernardoSemiOficial: UserGithub
   repositories: ProjectRepository[]
-  languages: Record<string, number>
 }
 
-const Projects = ({
-  bernardoSemiOficial,
-  repositories,
-  languages,
-}: ProjectsProps) => {
+const Projects = ({ bernardoSemiOficial, repositories }: ProjectsProps) => {
   // const getUsersAuthenticated = async () => {
   //   const username = 'BernardoSemiOficial'
   //   const data = await getUserAuthenticated()
@@ -35,7 +30,7 @@ const Projects = ({
   // }
 
   useEffect(() => {
-    console.log({ bernardoSemiOficial, repositories, languages })
+    console.log({ bernardoSemiOficial, repositories })
   }, [])
 
   return (
@@ -68,16 +63,13 @@ interface GetStaticProps {
 export async function getStaticProps({ locale }: GetStaticProps) {
   const data = await getUserAuthenticated()
   const repositories = await getRepositoriesByUser()
-  const languages = await getLanguagesByRepository({
-    name: repositories[0].name,
-  })
+  await getLanguagesByRepositories(repositories)
 
   return {
     props: {
       environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
       bernardoSemiOficial: data,
       repositories,
-      languages,
       ...(await serverSideTranslations(locale ?? 'pt', ['common'])),
     },
     revalidate: RevalidateTime['24Hours'],

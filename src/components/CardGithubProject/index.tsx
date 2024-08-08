@@ -15,11 +15,12 @@ export const CardGithubProject = ({
   createdAt,
   owner,
 }: CardGithubProject) => {
+  const languagesKeys = Object.keys(languages)
   return (
     <article className={S.container}>
       <div className={S.header}>
         <ul className={S.listLanguages}>
-          {languages?.map(language => (
+          {languagesKeys?.map(language => (
             <li key={language}>
               <Chip
                 label={language}

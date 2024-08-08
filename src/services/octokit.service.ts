@@ -46,7 +46,8 @@ export const getRepositoriesByUser = async (): Promise<ProjectRepository[]> => {
 
     const projectRepository: ProjectRepository[] = filtredRepositories.map(
       repository => ({
-        languages: [],
+        languages: {},
+        id: repository.id,
         url: repository.html_url,
         fork: repository.fork,
         name: repository.name,
@@ -69,9 +70,21 @@ export const getRepositoriesByUser = async (): Promise<ProjectRepository[]> => {
   }
 }
 
-export const getLanguagesByRepository = async (repository: {
-  name: string
-}): Promise<RespositoryLanguageGithub | null> => {
+export const getLanguagesByRepositories = async (
+  repositories: ProjectRepository[]
+) => {
+  const languages = await Promise.all(
+    repositories.map(async repository => {
+      return await getLanguagesByRepository(repository)
+    })
+  )
+
+  return languages
+}
+
+export const getLanguagesByRepository = async (
+  repository: ProjectRepository
+): Promise<void> => {
   try {
     const languages = (await octokit.request(
       'GET /repos/{owner}/{repo}/languages',
@@ -82,9 +95,9 @@ export const getLanguagesByRepository = async (repository: {
       }
     )) as OctokitGithub<RespositoryLanguageGithub>
 
-    return languages.data
+    if (Object.entries(languages.data).length)
+      repository.languages = languages.data
   } catch (error) {
     console.error(error)
-    return null
   }
 }
