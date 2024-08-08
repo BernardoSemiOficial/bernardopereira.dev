@@ -4,7 +4,7 @@ import { style, styleVariants } from '@vanilla-extract/css'
 export const base = style({
   display: 'inline-flex',
   alignItems: 'center',
-  borderRadius: vars.borderRadius.small,
+  borderRadius: '9999px',
   padding: vars.spacing.small,
   paddingInline: vars.spacing.xsmall,
 })
