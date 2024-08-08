@@ -1,6 +1,7 @@
 import {
   OctokitGithub,
   RepositoryGithub,
+  RespositoryLanguageGithub,
   UserGithub,
 } from '@/@types/models/github.model'
 import { ProjectRepository } from '@/@types/models/projects.model'
@@ -19,6 +20,8 @@ const headers = {
   },
 }
 
+const username = 'BernardoSemiOficial'
+
 export const getUserAuthenticated = async (): Promise<UserGithub | null> => {
   try {
     const request =
@@ -32,7 +35,6 @@ export const getUserAuthenticated = async (): Promise<UserGithub | null> => {
 
 export const getRepositoriesByUser = async (): Promise<ProjectRepository[]> => {
   try {
-    const username = 'BernardoSemiOficial'
     const repositories = (await octokit.request('GET /users/{username}/repos', {
       username,
       ...headers,
@@ -59,5 +61,25 @@ export const getRepositoriesByUser = async (): Promise<ProjectRepository[]> => {
   } catch (error) {
     console.error(error)
     return []
+  }
+}
+
+export const getLanguagesByRepository = async (repository: {
+  name: string
+}): Promise<RespositoryLanguageGithub | null> => {
+  try {
+    const languages = (await octokit.request(
+      'GET /repos/{owner}/{repo}/languages',
+      {
+        owner: username,
+        repo: repository.name,
+        ...headers,
+      }
+    )) as OctokitGithub<RespositoryLanguageGithub>
+
+    return languages.data
+  } catch (error) {
+    console.error(error)
+    return null
   }
 }

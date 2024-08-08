@@ -146,6 +146,10 @@ export interface RespositoryPermissionsGithub {
   pull: boolean
 }
 
+export interface RespositoryLanguageGithub {
+  [key: string]: number
+}
+
 export interface OctokitGithub<T> {
   url: string
   headers: object
