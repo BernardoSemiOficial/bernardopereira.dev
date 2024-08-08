@@ -11,13 +11,28 @@ export const CardGithubProject = () => {
       <div className={S.header}>
         <ul className={S.listLanguages}>
           <li>
-            <Chip label='Javascript' />
+            <Chip
+              label='Javascript'
+              background='yellow'
+              labelStyle='linkSmall'
+              color='black'
+            />
           </li>
           <li>
-            <Chip label='React' />
+            <Chip
+              label='React'
+              background='yellow'
+              labelStyle='linkSmall'
+              color='black'
+            />
           </li>
           <li>
-            <Chip label='NestJS' />
+            <Chip
+              label='NestJS'
+              background='yellow'
+              labelStyle='linkSmall'
+              color='black'
+            />
           </li>
         </ul>
       </div>
