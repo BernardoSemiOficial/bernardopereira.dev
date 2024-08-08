@@ -47,13 +47,18 @@ export const getRepositoriesByUser = async (): Promise<ProjectRepository[]> => {
     const projectRepository: ProjectRepository[] = filtredRepositories.map(
       repository => ({
         languages: [],
-        url: repository.url,
+        url: repository.html_url,
         fork: repository.fork,
         name: repository.name,
         private: repository.private,
         language: repository.language,
-        created_at: repository.created_at,
+        createdAt: repository.created_at,
         description: repository.description,
+        owner: {
+          login: repository.owner.login,
+          url: repository.owner.html_url,
+          type: repository.owner.type,
+        },
       })
     )
 

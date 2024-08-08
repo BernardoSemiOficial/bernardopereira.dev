@@ -21,15 +21,32 @@ export const listLanguages = style({
   marginTop: 0,
   paddingLeft: 0,
   display: 'flex',
-  gap: vars.spacing.xxsmall,
+  height: vars.spacing.xxmedium,
+  gap: vars.spacing.xsmall,
 })
 export const content = style({})
 export const title = style({
   color: vars.color.black[900],
   font: vars.font.headlineSmallX,
   marginTop: vars.spacing.xsmall,
+  display: '-webkit-box',
+  overflow: 'hidden',
+  textDecoration: 'ellipsis',
+  whiteSpace: 'pre-wrap',
+  boxOrient: 'vertical',
+  lineClamp: 1,
+  WebkitBoxOrient: 'vertical',
+  WebkitLineClamp: 1,
 })
 export const description = style({
+  height: '3rem',
+  overflow: 'hidden',
+  textDecoration: 'ellipsis',
+  display: '-webkit-box',
+  boxOrient: 'vertical',
+  lineClamp: 2,
+  WebkitBoxOrient: 'vertical',
+  WebkitLineClamp: 2,
   color: vars.color.black[800],
   font: vars.font.bodySmall,
   marginTop: vars.spacing.xsmall,

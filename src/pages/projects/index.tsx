@@ -1,6 +1,7 @@
 import { ReactElement, useEffect } from 'react'
 
-import { RepositoryGithub, UserGithub } from '@/@types/models/github.model'
+import { UserGithub } from '@/@types/models/github.model'
+import { ProjectRepository } from '@/@types/models/projects.model'
 import { CardGithubProject } from '@/components/CardGithubProject'
 import { RevalidateTime } from '@/enums/RevalidateTime'
 import { createUUID } from '@/helpers/createUUID'
@@ -17,7 +18,7 @@ import * as S from './projects.css'
 interface ProjectsProps {
   environment: string
   bernardoSemiOficial: UserGithub
-  repositories: RepositoryGithub
+  repositories: ProjectRepository[]
   languages: Record<string, number>
 }
 
@@ -43,9 +44,14 @@ const Projects = ({
         <section className={S.projects}>
           <h1 className={S.projectsTitle}>Projetos</h1>
           <ul className={S.githubProjects}>
-            {Array.from({ length: 5 }).map(() => (
+            {/* {Array.from({ length: 5 }).map(() => (
               <li className={S.githubProjectItem} key={createUUID()}>
                 <CardGithubProject />
+              </li>
+            ))} */}
+            {repositories?.map(repository => (
+              <li className={S.githubProjectItem} key={createUUID()}>
+                <CardGithubProject {...repository} />
               </li>
             ))}
           </ul>

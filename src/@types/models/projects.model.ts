@@ -6,5 +6,10 @@ export type ProjectRepository = {
   languages: string[]
   fork: boolean
   description: string | null
-  created_at: Date
+  createdAt: Date
+  owner: {
+    login: string
+    url: string
+    type: string
+  }
 }
