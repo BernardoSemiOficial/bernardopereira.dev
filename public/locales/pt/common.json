@@ -50,6 +50,10 @@
     "position": "Desenvolvedor Front-End",
     "descricao": "Este é o meu blog pessoal, que criei para compartilhar sobre minha carreira de desenvolvedor front-end."
   },
+  "cardGithubProject": {
+    "viewAnchorTitle": "Clique para ver o projeto",
+    "viewAnchor": "Ver projeto"
+  },
   "about": {
     "paragraph1": "Trabalho atualmente como Desenvolvedor Front-end Pleno na <1>{{ employeer }}</1>.",
     "paragraph2": "Atualmente venho trabalhando com as principais bibliotecas e frameworks do mercado de Front-End: ReactJS, NextJS, VueJS, Angular e RxJS. Realizo a criação de testes unitários, utilização de typescript na maioria dos projetos. Já utilizei estilização com css puro, SCSS, styled-components, vanilha extract.",
@@ -57,5 +61,9 @@
     "paragraph4": "Tenho bacharel em Sistemas de Informação na <1>{{ school1 }}</1> (Faculdade de Informática e Administração), onde ganhei uma bolsa de estudo de 100% dos valores pagos. Além disso, formado em técnico em Informática para Internet na instituição <3>{{ school2 }}</3> desde dezembro de 2018.",
     "paragraph5": "Minha paixão por desenvolvimento web, minha abordagem colaborativa e meu desejo de aprender continuamente me impulsionam a buscar excelência na criação de soluções digitais de alta qualidade.",
     "paragraph6": "Estou ansioso para continuar minha jornada de crescimento profissional, aprimorando minhas habilidades e contribuindo para projetos inovadores. Vamos conectar e explorar oportunidades de colaboração."
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Aqui estão alguns dos projetos que desenvolvi recentemente. <br/>Clique em um projeto para saber mais sobre ele."
   }
 }

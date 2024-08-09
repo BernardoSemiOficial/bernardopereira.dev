@@ -1,4 +1,4 @@
-import { ReactElement, useEffect } from 'react'
+import { ReactElement } from 'react'
 
 import { UserGithub } from '@/@types/models/github.model'
 import { ProjectRepository } from '@/@types/models/projects.model'
@@ -11,6 +11,7 @@ import {
   getRepositoriesByUser,
   getUserAuthenticated,
 } from '@/services/octokit.service'
+import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import * as S from './projects.css'
@@ -22,28 +23,19 @@ interface ProjectsProps {
 }
 
 const Projects = ({ bernardoSemiOficial, repositories }: ProjectsProps) => {
-  // const getUsersAuthenticated = async () => {
-  //   const username = 'BernardoSemiOficial'
-  //   const data = await getUserAuthenticated()
-  //   const repositories = await getRepositoriesByUser(username)
-  //   console.log('data', data, repositories)
-  // }
-
-  useEffect(() => {
-    console.log({ bernardoSemiOficial, repositories })
-  }, [])
+  console.log({ bernardoSemiOficial, repositories })
+  const { t } = useTranslation('common')
 
   return (
     <section className={S.container}>
       <div className={S.wrapper}>
         <section className={S.projects}>
-          <h1 className={S.projectsTitle}>Projetos</h1>
+          <h1 className={S.projectsTitle}>{t('projects.title')}</h1>
+          <h1
+            className={S.projectsDescription}
+            dangerouslySetInnerHTML={{ __html: t('projects.description') }}
+          ></h1>
           <ul className={S.githubProjects}>
-            {/* {Array.from({ length: 5 }).map(() => (
-              <li className={S.githubProjectItem} key={createUUID()}>
-                <CardGithubProject />
-              </li>
-            ))} */}
             {repositories?.map(repository => (
               <li className={S.githubProjectItem} key={createUUID()}>
                 <CardGithubProject {...repository} />

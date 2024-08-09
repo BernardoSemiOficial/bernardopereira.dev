@@ -1,4 +1,5 @@
 import { ProjectRepository } from '@/@types/models/projects.model'
+import { useTranslation } from 'next-i18next'
 
 import { Chip } from '../Chip'
 import { LinkBase } from '../LinkBase'
@@ -15,6 +16,7 @@ export const CardGithubProject = ({
   createdAt,
   owner,
 }: CardGithubProject) => {
+  const { t } = useTranslation('common')
   const languagesKeys = Object.keys(languages)
   return (
     <article className={S.container}>
@@ -30,30 +32,6 @@ export const CardGithubProject = ({
               />
             </li>
           ))}
-          {/* <li>
-            <Chip
-              label='Javascript'
-              background='yellow'
-              font='textCaption'
-              color='black'
-            />
-          </li>
-          <li>
-            <Chip
-              label='React'
-              background='yellow'
-              font='textCaption'
-              color='black'
-            />
-          </li>
-          <li>
-            <Chip
-              label='NestJS'
-              background='yellow'
-              font='textCaption'
-              color='black'
-            />
-          </li> */}
         </ul>
       </div>
       <div className={S.content}>
@@ -77,11 +55,11 @@ export const CardGithubProject = ({
         <LinkBase
           variant={{ color: 'yellow', style: 'underline' }}
           rel='noopener noreferrer'
-          title={'Clique para ver o projeto'}
+          title={t('cardGithubProject.viewAnchorTitle')}
           href={url || ''}
           newTab={true}
         >
-          Ver projeto
+          {t('cardGithubProject.viewAnchor')}
         </LinkBase>
       </div>
     </article>

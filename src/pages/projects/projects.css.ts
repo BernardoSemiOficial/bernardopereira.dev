@@ -19,6 +19,10 @@ export const projects = style({})
 export const projectsTitle = style({
   font: vars.font.headlineLarge,
 })
+export const projectsDescription = style({
+  font: vars.font.subtitleLarge,
+  marginTop: vars.spacing.medium,
+})
 
 export const githubProjects = style({
   display: 'flex',
