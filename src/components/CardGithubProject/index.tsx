@@ -6,7 +6,7 @@ import { LinkBase } from '../LinkBase'
 import { LogoImage } from '../Logo'
 import * as S from './cardGithubProject.css'
 
-interface CardGithubProject extends ProjectRepository {}
+interface CardGithubProjectProps extends ProjectRepository {}
 
 export const CardGithubProject = ({
   languages,
@@ -15,7 +15,7 @@ export const CardGithubProject = ({
   url,
   createdAt,
   owner,
-}: CardGithubProject) => {
+}: CardGithubProjectProps) => {
   const { t } = useTranslation('common')
   const languagesKeys = Object.keys(languages)
   return (
