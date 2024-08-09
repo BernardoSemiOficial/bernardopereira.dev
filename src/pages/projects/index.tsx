@@ -14,7 +14,7 @@ import {
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import * as S from './projects.css'
+import * as S from '../../styles/pages/projects.css'
 
 interface ProjectsProps {
   environment: string
