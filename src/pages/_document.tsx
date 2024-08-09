@@ -35,6 +35,11 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'
           rel='stylesheet'
         />
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5278607045177297'
+          crossOrigin='anonymous'
+        ></script>
       </Head>
       <body>
         <Main />
