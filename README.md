@@ -23,24 +23,14 @@ Nas linhas abaixo irei descrever melhor todas as informações sobre o projeto e
 quais tecnologias foram utilizadas para seu desenvolvimento.
 
 Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem
-utilizadas no mercado de Front-End (algumas eu nem tenho tanto conhecimento a
-respeito, por nunca ter trabalhado, mas tem tudo para o mercado acabar
-aderindo). Entre elas:
+utilizadas no mercado de Front-End. Entre elas:
 
 ### Tecnologias Core
 
 - NextJS
 - TypeScript
-- Biblioteca CSS-in-JS "zero-runtime"\*
+- Biblioteca CSS-in-JS "zero-runtime"
   - [Vanilla-Extract](https://vanilla-extract.style/)
-- CMS\*
-  - [Strapi](https://strapi.io/)
-  - [Prismic](https://prismic.io/docs)
-- GraphQL e Apollo
-  - [GraphQL](https://graphql.org/)
-  - [Apollo](https://www.apollographql.com/)
-
-\*: tecnologias ainda não definida.
 
 ### Ambiente
 
@@ -51,9 +41,57 @@ aderindo). Entre elas:
 - [Stylelint](https://stylelint.io/)
 - [Lint-staged](https://github.com/okonet/lint-staged)
 
+### Ferramentas
+
+- Google Tag Manager (GTM)
+- Google Analytics
+- Dependabot (Rotinas semanais de verificação)
+
+### Executando o projeto
+
+Para rodar o projeto frontend, siga os seguintes passos:
+
+1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixar a
+   versão mais recente do Node.js em [nodejs.org](https://nodejs.org/).
+
+2. Abra o terminal e navegue até o diretório raiz do projeto.
+
+3. Execute o seguinte comando para instalar as dependências do projeto:
+
+```
+npm install
+```
+
+ou
+
+```
+yarn install
+```
+
+4. Após a conclusão da instalação das dependências, execute o seguinte comando
+   para iniciar o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+ou
+
+```
+yarn dev
+```
+
+5. Aguarde até que o servidor de desenvolvimento seja iniciado. Em seguida, abra
+   o seu navegador e acesse `http://localhost:3000` para visualizar o projeto em
+   execução.
+
+Agora você pode começar a testar o projeto frontend localmente.
+
 ### Inspiração de Layout
 
 O meu projeto é inspirado no [layout](src/docs/layout-jagriti-mishra.png) da
 [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que ela deixou
-disponível: [link](https://jagriti-blog.netlify.app/#) e também no site pessoal
-do Felipe Fialho que ele tem disponível: [link](https://www.felipefialho.com/)
+disponível: [link](https://jagriti-blog.netlify.app/#).
+
+Também me inspirei no site pessoal do Felipe Fialho, que está disponível em:
+[link](https://www.felipefialho.com/).
