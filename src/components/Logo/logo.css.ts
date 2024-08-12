@@ -23,6 +23,8 @@ export const photo = style([
 ])
 
 export const linkImage = style({
+  backgroundColor: 'transparent',
+  border: 'none',
   display: 'flex',
   alignItems: 'center',
 })

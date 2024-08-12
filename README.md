@@ -23,24 +23,14 @@ Nas linhas abaixo irei descrever melhor todas as informações sobre o projeto e
 quais tecnologias foram utilizadas para seu desenvolvimento.
 
 Nesse projeto, penso em utilizar tecnologias que estão atualmente sendo bem
-utilizadas no mercado de Front-End (algumas eu nem tenho tanto conhecimento a
-respeito, por nunca ter trabalhado, mas tem tudo para o mercado acabar
-aderindo). Entre elas:
+utilizadas no mercado de Front-End. Entre elas:
 
 ### Tecnologias Core
 
 - NextJS
 - TypeScript
-- Biblioteca CSS-in-JS "zero-runtime"\*
+- Biblioteca CSS-in-JS "zero-runtime"
   - [Vanilla-Extract](https://vanilla-extract.style/)
-- CMS\*
-  - [Strapi](https://strapi.io/)
-  - [Prismic](https://prismic.io/docs)
-- GraphQL e Apollo
-  - [GraphQL](https://graphql.org/)
-  - [Apollo](https://www.apollographql.com/)
-
-\*: tecnologias ainda não definida.
 
 ### Ambiente
 
@@ -51,49 +41,57 @@ aderindo). Entre elas:
 - [Stylelint](https://stylelint.io/)
 - [Lint-staged](https://github.com/okonet/lint-staged)
 
+### Ferramentas
+
+- Google Tag Manager (GTM)
+- Google Analytics
+- Dependabot (Rotinas semanais de verificação)
+
+### Executando o projeto
+
+Para rodar o projeto frontend, siga os seguintes passos:
+
+1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixar a
+   versão mais recente do Node.js em [nodejs.org](https://nodejs.org/).
+
+2. Abra o terminal e navegue até o diretório raiz do projeto.
+
+3. Execute o seguinte comando para instalar as dependências do projeto:
+
+```
+npm install
+```
+
+ou
+
+```
+yarn install
+```
+
+4. Após a conclusão da instalação das dependências, execute o seguinte comando
+   para iniciar o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+ou
+
+```
+yarn dev
+```
+
+5. Aguarde até que o servidor de desenvolvimento seja iniciado. Em seguida, abra
+   o seu navegador e acesse `http://localhost:3000` para visualizar o projeto em
+   execução.
+
+Agora você pode começar a testar o projeto frontend localmente.
+
 ### Inspiração de Layout
 
 O meu projeto é inspirado no [layout](src/docs/layout-jagriti-mishra.png) da
 [Jagriti Mishra](https://www.behance.net/jagritimishra2) no site que ela deixou
-disponível: [link](https://jagriti-blog.netlify.app/#) e também no site pessoal
-do Felipe Fialho que ele tem disponível: [link](https://www.felipefialho.com/)
+disponível: [link](https://jagriti-blog.netlify.app/#).
 
-### Backlog - tech
-
-- [] A ferramenta Stylelint ainda não suporta a análise de código CSS que vem de
-  bibliotecas como Vanilla Extract e Stitches. Isso é o que diz a própria
-  documentação do Stylelint na migração para a
-  [versão 15](https://stylelint.io/migration-guide/to-15/), que é a mais atual.
-
-### Atividades
-
-#### Página de Projetos
-
-Criar a página consumindo a API do GitHub para consumir todos os repositórios
-que existem na minha conta pessoal. Deve conter título, descrição, tecnologias
-utilizadas e link para o repositório.
-
-Nessa página deve conter as tecnologias que já trabalhei na carreira de forma
-geral.
-
-#### Página de Contato
-
-Criar redirecionamento para as minhas redes sociais para entrar em contato.
-
-Criar uma parte com formulário que permite o contato do usuário comigo, através
-do meu e-mail pessoal (bernardo.258@hotmail.com).
-
-Bibliotecas:
-
-- [mailgun](https://www.mailgun.com/es/productos/envios/smtp/)
-- [nodemailer](https://nodemailer.com/about/)
-
-#### Página de Blog
-
-Criar uma página com listagem de postagens do meu Blog. Nessa listagem deve ter
-título, descrição, tempo de leitura, área de tecnologia e redirecionamento para
-ser mais informações.
-
-Criar página individual da postagem com título, descrição, tempo de leitura,
-área de tecnologia e conteúdo. No final da página deve ter recomendação de
-outras postagens que já foram lançadas.
+Também me inspirei no site pessoal do Felipe Fialho, que está disponível em:
+[link](https://www.felipefialho.com/).

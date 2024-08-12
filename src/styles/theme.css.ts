@@ -63,6 +63,9 @@ export const vars = createGlobalTheme(':root', {
     small: '4px',
     xsmall: '8px',
     xxsmall: '12px',
+    xxxsmall: '16px',
+    medium: '20px',
+    xmedium: '24px',
   },
   boxShadow: {
     small: '0px 10px 5px -2px rgba(0, 0, 0, 0.1)',
@@ -116,5 +119,8 @@ export const vars = createGlobalTheme(':root', {
     xlarge: '40px',
     xxlarge: '44px',
     xxxlarge: '48px',
+  },
+  zIndex: {
+    toggleThemeBall: '5',
   },
 })

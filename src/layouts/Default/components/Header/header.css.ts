@@ -59,3 +59,17 @@ export const navItem = style([
     },
   }),
 ])
+
+export const headerActions = style({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyItems: 'center',
+  gap: vars.spacing.small,
+})
+
+export const selectLanguage = style({
+  width: '100px',
+  height: '30px',
+  borderRadius: vars.borderRadius.small,
+})
