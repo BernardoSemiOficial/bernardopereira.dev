@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 
+import { CurriculumButton } from '@/components/CurriculumButton'
 import { About } from '@/layouts/Default/components/About'
 import { Hero } from '@/layouts/Default/components/Hero'
 import { SocialNetworks } from '@/layouts/Default/components/SocialNetworks'
@@ -18,6 +19,7 @@ const Home = ({ environment }: HomeProps) => {
   return (
     <>
       <Hero />
+      <CurriculumButton />
       <SocialNetworks />
       <About />
       <SocialNetworks />

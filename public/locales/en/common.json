@@ -66,5 +66,9 @@
   "projects": {
     "title": "Projects",
     "description": "Here are some of the projects I have recently developed. <br/>Click on a project to learn more about it."
+  },
+  "curriculum": {
+    "title": "see my resume",
+    "description": "click here to download my resume"
   }
 }
