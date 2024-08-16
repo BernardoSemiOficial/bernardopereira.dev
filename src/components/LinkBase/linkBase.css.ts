@@ -6,6 +6,7 @@ export const link = recipe({
     color: 'inherit',
     font: 'inherit',
     borderColor: 'inherit',
+    display: 'inline-flex',
   },
   variants: {
     style: {

@@ -1,5 +1,6 @@
 import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
+import { PiMailboxFill } from 'react-icons/pi'
 
 import { LinkBase } from '@/components/LinkBase'
 import { LinkGeneral } from '@/enums/LinksGeneral'
@@ -26,6 +27,14 @@ export const SocialNetworks = () => {
         newTab={true}
       >
         <FaLinkedinIn size={25} />
+      </LinkBase>
+      <LinkBase
+        variant={{ color: 'black', style: 'default' }}
+        title={t('labels.socialNetwork.sendEmail')}
+        href={LinkGeneral.EMAIL_PERSONAL}
+        newTab={true}
+      >
+        <PiMailboxFill size={25} />
       </LinkBase>
     </div>
   )

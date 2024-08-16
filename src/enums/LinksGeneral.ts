@@ -7,4 +7,5 @@ export enum LinkGeneral {
   GITHUB_BERNARDO_OFICIAL = 'https://github.com/BernardoOficial',
   GITHUB_BERNARDO_SEMI_OFICIAL = 'https://github.com/BernardoSemiOficial',
   LINKEDIN_BERNARDO = 'https://www.linkedin.com/in/bernardo-pereira-oliveira/',
+  EMAIL_PERSONAL = 'mailto:bernardo.258@hotmail.com',
 }
