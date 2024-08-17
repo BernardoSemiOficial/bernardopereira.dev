@@ -13,6 +13,23 @@ export const base = style({
   font: vars.font.linkSmall,
 })
 
+export const baseLink = style({
+  border: 'none',
+  cursor: 'pointer',
+  color: vars.color.white[900],
+  backgroundColor: vars.color.black[900],
+  borderRadius: vars.borderRadius.xxsmall,
+  paddingBlock: vars.spacing.xxsmall,
+  paddingInline: vars.spacing.xmedium,
+  boxShadow: vars.boxShadow.small,
+  font: vars.font.subtitleLarge,
+  ':hover': {
+    textDecoration: 'underline',
+    transform: 'scale(0.98)',
+    transition: vars.transition.ease,
+  },
+})
+
 export const button = styleVariants({
   primary: [
     base,
@@ -31,6 +48,12 @@ export const button = styleVariants({
     {
       color: vars.color.black[900],
       backgroundColor: vars.color.yellow[700],
+    },
+  ],
+  link: [
+    baseLink,
+    {
+      backgroundColor: vars.color.amber[700],
     },
   ],
 })

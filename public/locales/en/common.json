@@ -22,7 +22,8 @@
     "socialNetwork": {
       "visitMyGithub": "visit my GitHub to see my projects",
       "visitMyLinkedin": "visit my LinkedIn to follow me on social media",
-      "visitMyJSM": "visit the Juntos Somos Mais website to learn more about it"
+      "visitMyJSM": "visit the Juntos Somos Mais website to learn more about it",
+      "sendEmail": "send an email to me"
     },
     "companies": {
       "visitJSM": "visit the Juntos Somos Mais website to learn more about it",
@@ -65,5 +66,9 @@
   "projects": {
     "title": "Projects",
     "description": "Here are some of the projects I have recently developed. <br/>Click on a project to learn more about it."
+  },
+  "curriculum": {
+    "title": "see my resume",
+    "description": "click here to download my resume"
   }
 }
